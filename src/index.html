@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <script type="text/javascript" src="./main.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <main>
+            <input id="calcul" type="text" disabled>
+            <table>
+                <tr>
+                    <td><button id="7" value="7" onclick="fillInput(this.value)">7</button></td>
+                    <td><button id="8" value="8" onclick="fillInput(this.value)">8</button></td>
+                    <td><button id="9" value="9" onclick="fillInput(this.value)">9</button></td>
+                    <td><button id="=" value="=" onclick="printResult()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" value="4" onclick="fillInput(this.value)">4</button></td>
+                    <td><button id="5" value="5" onclick="fillInput(this.value)">5</button></td>
+                    <td><button id="6" value="6" onclick="fillInput(this.value)">6</button></td>
+                    <td><button id="+" value="+" onclick="addElement()">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1" value="1" onclick="fillInput(this.value)">1</button></td>
+                    <td><button id="2" value="2" onclick="fillInput(this.value)">2</button></td>
+                    <td><button id="3" value="3" onclick="fillInput(this.value)">3</button></td>
+                    <td><button id="ce" onclick="eraseStr()">CE</button></td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>
